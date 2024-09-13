@@ -1,0 +1,5 @@
+dicttoxml==1.7.16
+fastapi==0.114.1
+uvicorn==0.30.6
+python-multipart==0.0.9
+black==24.8.0
