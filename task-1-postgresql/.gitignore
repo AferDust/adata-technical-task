@@ -50,12 +50,10 @@ poetry.lock
 *.sqlite3
 
 # Ignore migrations
-**/migrations/
+#**/migrations/
 
 # Ignore local settings
 **/local_settings.py
-
-docker-compose.yml
 
 static
 pgdata

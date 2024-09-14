@@ -1,9 +1,9 @@
 import os
 import pandas as pd
 import numpy as np
-from models import Department, Position, Employee, Salary, DepartmentPosition
 
-from database import get_db_session
+from src.models import Department, Position, Employee, Salary, DepartmentPosition
+from src.database import get_db_session
 
 data_folder = 'data'
 
@@ -13,7 +13,6 @@ employees_df = pd.read_csv(os.path.join(data_folder, 'employees.csv'))
 department_positions_df = pd.read_csv(os.path.join(data_folder, 'department_positions.csv'))
 salaries_df = pd.read_csv(os.path.join(data_folder, 'salaries.csv'))
 
-salaries_df['end_date'] = salaries_df['end_date'].replace({np.nan: None})
 
 with get_db_session() as session:
     for _, row in departments_df.iterrows():
@@ -32,6 +31,7 @@ with get_db_session() as session:
         department_position = DepartmentPosition(id=row['id'], department_id=row['department_id'], position_id=row['position_id'])
         session.add(department_position)
 
+    salaries_df['end_date'] = salaries_df['end_date'].replace({np.nan: None})
     for _, row in salaries_df.iterrows():
         salary = Salary(
             employee_id=row['employee_id'],

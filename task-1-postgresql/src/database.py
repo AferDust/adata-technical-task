@@ -17,6 +17,7 @@ SessionFactory = sessionmaker(
     expire_on_commit=False
 )
 
+
 @contextmanager
 def get_db_session():
     session = SessionFactory()
