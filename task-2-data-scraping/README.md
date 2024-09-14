@@ -37,4 +37,4 @@ After the environment is set up and packages are installed, you can run the scra
 ```
 
 ## 📄 Result
-***Once the script has finished running, the scraped data will be saved in a file named organization_data.txt.***
+***Once the script has finished running, the scraped data will be saved in a file named ``organization_data.txt``.***

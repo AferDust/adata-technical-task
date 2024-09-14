@@ -41,11 +41,11 @@ To start the project and initialize all necessary services (PostgreSQL, PgAdmin,
 ```bash
 docker-compose up --build
 ```
-* PostgreSQL Server: A PostgreSQL database service is spun up and ready to be used.
-* PgAdmin: A web-based PostgreSQL administration tool becomes accessible.
-* App: The Python application will:
-  * ***Run migrations using Alembic to create database tables based on models.py.***
-  * ***Automatically load mock data from the data/ folder into the PostgreSQL database using load_data.py.***
+* **PostgreSQL Server:** A PostgreSQL database service is spun up and ready to be used.
+* **PgAdmin:** A web-based PostgreSQL administration tool becomes accessible.
+* **App:** The Python application will:
+  * ``Run migrations using Alembic to create database tables based on models.py.``
+  * ``Automatically load mock data from the data/ folder into the PostgreSQL database using load_data.py.``
 
 ***
 
@@ -70,10 +70,10 @@ Once the services are running, you can access PgAdmin by visiting the following 
 1. Click to **'Add New Server'**.
 2. In the General tab, give your server a name (e.g., Postgres Server).
 3. Switch to the **Connection** tab and enter the following details:
-   * Host: Refer to the hint below to find the PostgreSQL server host address.**(Hint Below)**
-   * Database: 'postgres'
-   * Username: 'root'
-   * Password: '1234'
+   * Host: ``Refer to the hint below to find the PostgreSQL server host address.``**(Hint Below)**
+   * Database: ``"postgres"``
+   * Username: ``"root"``
+   * Password: ``"1234"``
 
 
 ### Hint: Retrieving PostgreSQL Server Host Address
