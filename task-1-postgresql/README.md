@@ -72,7 +72,7 @@ Once the services are running, you can access PgAdmin by visiting the following 
 1. Click to **'Add New Server'**.
 2. In the General tab, give your server a name (e.g., Postgres Server).
 3. Switch to the **Connection** tab and enter the following details:
-   * Host: try the ``db`` variable, if that doesn't work ``Refer to the hint below to find the PostgreSQL server host address.``
+   * Host: try the ``"db"`` variable, if that doesn't work ``Refer to the "hint below" to find the PostgreSQL server host address.``
    * Database: ``"postgres"``
    * Username: ``"root"``
    * Password: ``"1234"``
